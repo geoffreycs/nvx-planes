@@ -380,6 +380,7 @@ equipments = {
 					strat_weapon
 					nav_bomber_weapon
 					cas_weapon_strat
+					plane_special_module_air_ground_radar
 					recon_camera
 				}
 			}
@@ -392,6 +393,8 @@ equipments = {
 					fighter_weapon_missile
 					strat_weapon
 					cas_weapon_strat
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -410,6 +413,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					twin_plane_engine_type
+					plane_engine_type
 				}
 			}
 
@@ -434,6 +438,16 @@ equipments = {
 					plane_special_module_stealth
 				}
 			}
+		}
+
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
 		}
 
 		default_modules = {
@@ -680,6 +694,7 @@ equipments = {
 					strat_weapon
 					nav_bomber_weapon
 					cas_weapon_strat
+					plane_special_module_air_ground_radar
 					recon_camera
 				}
 			}
@@ -692,6 +707,8 @@ equipments = {
 					fighter_weapon_missile
 					strat_weapon
 					cas_weapon_strat
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -710,6 +727,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					twin_plane_engine_type
+					plane_engine_type
 				}
 			}
 
@@ -734,6 +752,16 @@ equipments = {
 					plane_special_module_stealth
 				}
 			}
+		}
+
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
 		}
 
 		default_modules = {
@@ -970,6 +998,8 @@ equipments = {
 					strat_weapon
 					nav_bomber_weapon
 					cas_weapon
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 
@@ -981,6 +1011,8 @@ equipments = {
 					strat_weapon
 					nav_bomber_weapon
 					cas_weapon
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -999,6 +1031,7 @@ equipments = {
 				allowed_module_categories = {
 					quad_large_plane_engine_type
 					large_plane_engine_type
+					twin_plane_engine_type
 				}
 			}
 
@@ -1049,6 +1082,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
+		}
+
+		module_count_limit = {
 			module = demining_coil
 			count < 2
 		}
@@ -1075,11 +1113,6 @@ equipments = {
 
 		module_count_limit = {
 			category = plane_special_module_radio_navigation
-			count < 2
-		}
-
-		module_count_limit = {
-			category = plane_special_module_air_ground_radar
 			count < 2
 		}
 
@@ -1278,7 +1311,7 @@ equipments = {
 		module_slots = inherit
 		priority = 5
 		reliability = 0.5
-		air_range = 340
+		air_range = 1200
 		maximum_speed = 100
 		air_agility = 10
 		air_defence = 5
@@ -1296,7 +1329,7 @@ equipments = {
 		priority = 5
 		module_slots = inherit
 		reliability = 0.6
-		air_range = 750
+		air_range = 1850
 		maximum_speed = 150
 		air_agility = 15
 		air_defence = 7
@@ -1441,6 +1474,8 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					fighter_weapon_missile
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 
@@ -1452,6 +1487,8 @@ equipments = {
 					cas_weapon
 					nav_bomber_weapon
 					fighter_weapon_missile
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 
@@ -1482,6 +1519,16 @@ equipments = {
 					plane_special_module_stealth
 				}
 			}
+		}
+
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
 		}
 
 		default_modules = {
@@ -1658,6 +1705,8 @@ equipments = {
 					fighter_weapon_missile
 					mine_warfare_offense
 					mine_warfare_defense
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 
@@ -1678,6 +1727,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					twin_plane_engine_type
+					quad_large_plane_engine_type
 				}
 			}
 	
@@ -1703,6 +1753,16 @@ equipments = {
 			}
 		}
 	
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
+		}
+
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
@@ -1903,6 +1963,8 @@ equipments = {
 					fighter_weapon_missile
 					mine_warfare_offense
 					mine_warfare_defense
+					plane_special_module_air_ground_radar
+					recon_camera
 				}
 			}
 
@@ -1923,6 +1985,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					twin_plane_engine_type
+					quad_large_plane_engine_type
 				}
 			}
 	
@@ -1948,6 +2011,16 @@ equipments = {
 			}
 		}
 	
+		module_count_limit = {
+			module = recon_camera
+			count < 2
+		}
+
+		module_count_limit = {
+			category = plane_special_module_air_ground_radar
+			count < 2
+		}
+
 		default_modules = {
 			fixed_main_weapon_slot = empty
 			fixed_auxiliary_weapon_slot_1 = empty
